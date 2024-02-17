@@ -3,6 +3,7 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import tw from 'twrnc';
+import ConvoSection from './src/ConvoSection';
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
       >
         <StatusBar style='auto' />
         <View style={{ flex: 1 }}>
-          <WebView source={{ uri: 'https://jeff.quzzar.com/' }} style={{ flex: 1 }} />
+          <ConvoSection />
         </View>
       </SafeAreaView>
     </View>
